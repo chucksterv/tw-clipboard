@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-image: url("../images/bg-header-mobile.png");
+  }
+
+  @media (min-width: 576px) {
+    body {
+      background-image: url("../images/bg-header-desktop.png");
+    }
+  }
+}
+
+h2 {
+    @apply text-3xl font-bold text-neutral1 md:text-4xl;
+}
+h3 {
+    @apply text-2xl font-bold text-neutral1 md:text-3xl mb-2;
+}
